@@ -223,4 +223,7 @@ if __name__ == '__main__':
     # Chạy Flask app
     # Render cần đọc PORT từ environment variable
     port = int(os.environ.get('PORT', 10000))
+    import os
+    port = int(os.environ.get('PORT', 10000))
     app.run(host='0.0.0.0', port=port, debug=False)
+
